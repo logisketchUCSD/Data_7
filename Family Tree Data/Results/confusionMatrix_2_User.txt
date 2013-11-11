@@ -1,0 +1,8 @@
+01
+	Gate	Label	Wire
+Gate	0	0	0	
+Label	0	0	0	
+Wire	0	0	0	
+
+
+

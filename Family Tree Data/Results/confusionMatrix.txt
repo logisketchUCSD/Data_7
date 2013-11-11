@@ -1,0 +1,6 @@
+	Gate	Label	Wire
+Gate	333	30	44	
+Label	22	577	43	
+Wire	22	56	533	
+
+

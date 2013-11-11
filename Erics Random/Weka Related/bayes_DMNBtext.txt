@@ -1,0 +1,140 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.DMNBtext -I 1 -B true
+Relation:     digital_circuits
+Instances:    9802
+Attributes:   28
+              Arc Length
+              Average Pen Speed
+              Maximum Pen Speed
+              Sum of Thetas
+              Sum of Abs Value of Thetas
+              Sum of Squared Thetas
+              Sum of Sqrt of Thetas
+              Path Density
+              Bounding Box Width
+              Bounding Box Height
+              Bounding Box Area
+              Self Enclosing
+              Number of Self Intersections
+              Number of LL Intersections
+              Number of LX Intersections
+              Number of XL Intersections
+              Number of XX Intersections
+              Part of a Closed Path
+              End Point to Arc Length Ratio
+              Distance To Left or Right Edge
+              Distance To Top or Bottom Edge
+              Inside a Closed Path
+              Minimum Pen Speed
+              Difference Between Maximum and Minimum Pen Speed
+              Time to Draw Stroke
+              Time to Previous Stroke
+              Time to Next Stroke
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+The log ratio of two conditional probabilities of a word w_i: log(p(w_i)|+)/p(w_i)|-)) in decent order based on their absolute values
+Can be used to measure the discriminative power of each word.
+0 against the rest classes
+
+Inside a Closed Path: -1.0763422659308426
+Part of a Closed Path: 0.9976203259816646
+Number of LX Intersections: -0.7299561486858955
+Number of Self Intersections: -0.49560187619180895
+Number of XX Intersections: -0.4115027955309721
+Self Enclosing: 0.2974115854084926
+Bounding Box Width: -0.18861734232592528
+Time to Draw Stroke: -0.1884839160406255
+Difference Between Maximum and Minimum Pen Speed: -0.18829112191002723
+Bounding Box Area: -0.18820232587023872
+Bounding Box Height: -0.1880690426570714
+Time to Previous Stroke: -0.18625254835843347
+Minimum Pen Speed: -0.1858915760333045
+Distance To Top or Bottom Edge: -0.18314148039438338
+Sum of Sqrt of Thetas: -0.1780219481560843
+Distance To Left or Right Edge: -0.16870762855711366
+Time to Next Stroke: -0.1597318031202167
+Sum of Thetas: -0.1527404476938633
+Number of LL Intersections: -0.1496643824944291
+Number of XL Intersections: 0.057048886749606245
+
+1 against the rest classes
+
+Self Enclosing: -1.640356788959968
+Number of LX Intersections: -1.264342451131815
+Number of XL Intersections: -1.235856379555552
+Number of LL Intersections: -1.051661558370532
+Minimum Pen Speed: -1.0512859078149028
+Part of a Closed Path: -1.0102830557573879
+Distance To Left or Right Edge: -0.9448112831704619
+Time to Previous Stroke: -0.9146192559166829
+Time to Next Stroke: -0.9127122847119443
+Distance To Top or Bottom Edge: -0.9000942126748896
+Sum of Sqrt of Thetas: -0.8435694187159583
+Time to Draw Stroke: -0.8403535464659881
+Difference Between Maximum and Minimum Pen Speed: -0.8401827581952279
+Bounding Box Height: -0.8400531642274378
+Bounding Box Width: -0.8398405050581936
+Bounding Box Area: -0.839539968648412
+Sum of Thetas: -0.826228762189694
+Number of XX Intersections: -0.6881150207970899
+Inside a Closed Path: 0.6391397027566996
+Number of Self Intersections: -0.5657788389947216
+
+2 against the rest classes
+
+Part of a Closed Path: -1.6263869800652093
+Inside a Closed Path: -0.8464499242981801
+Number of LX Intersections: 0.6114997016763408
+Self Enclosing: -0.17197040400281952
+Number of XL Intersections: -0.10687751705239357
+Sum of Thetas: -0.09952946857587573
+Number of Self Intersections: 0.08156553130815422
+Number of XX Intersections: 0.07793123593021242
+Sum of Sqrt of Thetas: -0.06857605932927867
+Bounding Box Area: -0.06098136596203232
+Bounding Box Height: -0.06083821904311945
+Difference Between Maximum and Minimum Pen Speed: -0.060553208126054206
+Bounding Box Width: -0.06040592146104929
+Time to Draw Stroke: -0.060263032192135295
+Minimum Pen Speed: 0.04819043820100486
+Time to Next Stroke: -0.04549750666391835
+Number of LL Intersections: 0.037669879181517416
+Distance To Top or Bottom Edge: -0.031303836216769146
+Distance To Left or Right Edge: -0.021568862875966537
+Time to Previous Stroke: -0.02032175910281363
+
+
+
+Time taken to build model: 0.22 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6798               69.3532 %
+Incorrectly Classified Instances      3004               30.6468 %
+Kappa statistic                          0.4725
+Mean absolute error                      0.3005
+Root mean squared error                  0.3722
+Relative absolute error                 73.645  %
+Root relative squared error             82.4153 %
+Total Number of Instances             9802     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.641     0.09       0.847     0.641     0.73       0.843    Gate
+                 0.139     0.007      0.77      0.139     0.235      0.775    Label
+                 0.935     0.432      0.612     0.935     0.74       0.838    Wire
+Weighted Avg.    0.694     0.222      0.737     0.694     0.664      0.831
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 2743   27 1507 |    a = Gate
+  259  194  944 |    b = Label
+  236   31 3861 |    c = Wire
+

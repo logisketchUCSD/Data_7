@@ -1,0 +1,73 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.KStar -B 20 -M a
+Relation:     digital_circuits
+Instances:    9802
+Attributes:   28
+              Arc Length
+              Average Pen Speed
+              Maximum Pen Speed
+              Sum of Thetas
+              Sum of Abs Value of Thetas
+              Sum of Squared Thetas
+              Sum of Sqrt of Thetas
+              Path Density
+              Bounding Box Width
+              Bounding Box Height
+              Bounding Box Area
+              Self Enclosing
+              Number of Self Intersections
+              Number of LL Intersections
+              Number of LX Intersections
+              Number of XL Intersections
+              Number of XX Intersections
+              Part of a Closed Path
+              End Point to Arc Length Ratio
+              Distance To Left or Right Edge
+              Distance To Top or Bottom Edge
+              Inside a Closed Path
+              Minimum Pen Speed
+              Difference Between Maximum and Minimum Pen Speed
+              Time to Draw Stroke
+              Time to Previous Stroke
+              Time to Next Stroke
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+KStar Beta Verion (0.1b).
+Copyright (c) 1995-97 by Len Trigg (trigg@cs.waikato.ac.nz).
+Java port to Weka by Abdelaziz Mahoui (am14@cs.waikato.ac.nz).
+
+KStar options : -B 20 -M a  
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        8837               90.1551 %
+Incorrectly Classified Instances       965                9.8449 %
+Kappa statistic                          0.8394
+Mean absolute error                      0.0698
+Root mean squared error                  0.2351
+Relative absolute error                 17.1118 %
+Root relative squared error             52.0556 %
+Total Number of Instances             9802     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.91      0.09       0.886     0.91      0.898      0.969    Gate
+                 0.874     0.027      0.844     0.874     0.859      0.987    Label
+                 0.902     0.042      0.939     0.902     0.92       0.979    Wire
+Weighted Avg.    0.902     0.061      0.903     0.902     0.902      0.976
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 3893  169  215 |    a = Gate
+  150 1221   26 |    b = Label
+  349   56 3723 |    c = Wire
+

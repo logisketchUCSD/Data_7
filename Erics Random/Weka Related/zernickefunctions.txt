@@ -1,0 +1,52 @@
+	/**
+	 * Computes the Zernicke moment of a template
+	 * @param n
+	 * @param m
+	 * @param template
+	 * @return
+	 */
+	public static double Anm(int n, int m, DRTemplate template){
+		double sum = 0;
+		
+		for(int i = 0; i < template.size(); i++){
+			float x = template.getPoint(i).getX();
+			float y = template.getPoint(i).getY();
+			sum += Vnm(n,m,x,y);
+		}
+		
+		return sum;
+	}
+	
+	public static double Vnm(int n, int m, FPoint2D point){
+		double p = Math.sqrt(Math.pow(point.getX(), 2) + Math.pow(point.getY(), 2));
+		double theta = Math.atan(point.getY() / point.getX());
+		
+		return Vnm(n, m, p, theta);
+	}
+	
+	public static double Vnm(int n, int m, double p, double theta){
+		return Rnm(n,m,p) * Math.pow(Math.E, m * theta); //TODO We are not including the j found in the equation
+	}
+	
+	public static double Rnm(int n, int m, double p){
+		double sum = 0;
+		
+		for(int s = 0; s <= 2; s++){
+			long num = factorial(n-s);
+			long den1 = factorial(s);
+			long den2 = factorial( ((n + Math.abs(m)) / 2) - s );
+			long den3 = factorial( ((n - Math.abs(m)) / 2) - s );
+			long den = den1 * den2 * den3;
+			
+			sum += Math.pow(-1, s) * ( num / den ) * Math.pow(p, n - 2 * s);
+		}
+		
+		return sum;
+	}
+	
+    public static long factorial( int n )
+    {
+        if( n <= 1 ) return 1;
+
+        return n * factorial( n - 1 );
+    }

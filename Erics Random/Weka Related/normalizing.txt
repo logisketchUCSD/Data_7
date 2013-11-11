@@ -1,0 +1,12 @@
+Features to normalize:
+-Arc Length: Sketch Average Arc Length
+-Average Pen Speed: Sketch Average Pen Speed
+-Maximum Pen Speed: Sketch Average Pen Speed
+-Bounding Box Width: Sketch Average SQRT(Area)
+-Bounding Box Height: Sketch Average SQRT(Area)
+-Bounding Box Area: Sketch Average Area
+-Minimum Pen Speed: Sketch Average Pen Speed
+-Difference Between Maximum and Minimum Pen Speed: Sketch Average Pen Speed
+-Time to Draw Stroke: Sketch Average Time to Draw Stroke
+-Time to Previous Stroke: Sketch Average Time to Draw Stroke
+-Time to Next Stroke: Sketch Average Time to Draw Stroke

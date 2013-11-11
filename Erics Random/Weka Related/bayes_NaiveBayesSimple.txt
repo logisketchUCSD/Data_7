@@ -1,0 +1,324 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayesSimple 
+Relation:     digital_circuits
+Instances:    9802
+Attributes:   28
+              Arc Length
+              Average Pen Speed
+              Maximum Pen Speed
+              Sum of Thetas
+              Sum of Abs Value of Thetas
+              Sum of Squared Thetas
+              Sum of Sqrt of Thetas
+              Path Density
+              Bounding Box Width
+              Bounding Box Height
+              Bounding Box Area
+              Self Enclosing
+              Number of Self Intersections
+              Number of LL Intersections
+              Number of LX Intersections
+              Number of XL Intersections
+              Number of XX Intersections
+              Part of a Closed Path
+              End Point to Arc Length Ratio
+              Distance To Left or Right Edge
+              Distance To Top or Bottom Edge
+              Inside a Closed Path
+              Minimum Pen Speed
+              Difference Between Maximum and Minimum Pen Speed
+              Time to Draw Stroke
+              Time to Previous Stroke
+              Time to Next Stroke
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes (simple)
+
+Class Gate: P(C) = 0.43630801
+
+Attribute Arc Length
+Mean: 0.73217498	Standard Deviation: 0.48336676
+
+Attribute Average Pen Speed
+Mean: 1.03834315	Standard Deviation: 0.42321434
+
+Attribute Maximum Pen Speed
+Mean: 1.86636687	Standard Deviation: 0.7305396 
+
+Attribute Sum of Thetas
+Mean: -0.03469054	Standard Deviation: 3.58211306
+
+Attribute Sum of Abs Value of Thetas
+Mean: 4.31259107	Standard Deviation: 4.12291689
+
+Attribute Sum of Squared Thetas
+Mean: 2.62982483	Standard Deviation: 4.00357062
+
+Attribute Sum of Sqrt of Thetas
+Mean: 9.48383836	Standard Deviation: 8.76775426
+
+Attribute Path Density
+Mean: 3.52704385	Standard Deviation: 3.9598414 
+
+Attribute Bounding Box Width
+Mean: 0.53384473	Standard Deviation: 0.45613411
+
+Attribute Bounding Box Height
+Mean: 0.98332599	Standard Deviation: 0.61901201
+
+Attribute Bounding Box Area
+Mean: 0.52173379	Standard Deviation: 0.78662405
+
+Attribute Self Enclosing
+Mean: 0.10334347	Standard Deviation: 0.30444255
+
+Attribute Number of Self Intersections
+Mean: 0.0748188 	Standard Deviation: 0.47086738
+
+Attribute Number of LL Intersections
+Mean: 0.19429507	Standard Deviation: 0.5617902 
+
+Attribute Number of LX Intersections
+Mean: 0.13444003	Standard Deviation: 0.47424229
+
+Attribute Number of XL Intersections
+Mean: 0.38438158	Standard Deviation: 0.79933273
+
+Attribute Number of XX Intersections
+Mean: 0.36684592	Standard Deviation: 1.13386294
+
+Attribute Part of a Closed Path
+Mean: 0.62964695	Standard Deviation: 0.4829557 
+
+Attribute End Point to Arc Length Ratio
+Mean: 0.65268281	Standard Deviation: 0.33265326
+
+Attribute Distance To Left or Right Edge
+Mean: 0.40889238	Standard Deviation: 0.28159567
+
+Attribute Distance To Top or Bottom Edge
+Mean: 0.51118342	Standard Deviation: 0.31024916
+
+Attribute Inside a Closed Path
+Mean: 0.01052139	Standard Deviation: 0.10204474
+
+Attribute Minimum Pen Speed
+Mean: 0.52627114	Standard Deviation: 0.64826173
+
+Attribute Difference Between Maximum and Minimum Pen Speed
+Mean: 1.68709346	Standard Deviation: 0.73180312
+
+Attribute Time to Draw Stroke
+Mean: 0.44278232	Standard Deviation: 0.45594086
+
+Attribute Time to Previous Stroke
+Mean: 2.00357821	Standard Deviation: 3.81070216
+
+Attribute Time to Next Stroke
+Mean: 1.85781436	Standard Deviation: 2.71178003
+
+
+
+Class Label: P(C) = 0.14258032
+
+Attribute Arc Length
+Mean: 0.45724038	Standard Deviation: 0.31631729
+
+Attribute Average Pen Speed
+Mean: 0.98045702	Standard Deviation: 0.40698948
+
+Attribute Maximum Pen Speed
+Mean: 1.68872709	Standard Deviation: 0.66886231
+
+Attribute Sum of Thetas
+Mean: -0.08221329	Standard Deviation: 4.04646388
+
+Attribute Sum of Abs Value of Thetas
+Mean: 4.67450177	Standard Deviation: 4.21121229
+
+Attribute Sum of Squared Thetas
+Mean: 4.72797326	Standard Deviation: 5.4989443 
+
+Attribute Sum of Sqrt of Thetas
+Mean: 7.5959299 	Standard Deviation: 6.59259315
+
+Attribute Path Density
+Mean: 4.01004041	Standard Deviation: 3.82724423
+
+Attribute Bounding Box Width
+Mean: 0.26570825	Standard Deviation: 0.16054237
+
+Attribute Bounding Box Height
+Mean: 0.5702643 	Standard Deviation: 0.33662307
+
+Attribute Bounding Box Area
+Mean: 0.15193686	Standard Deviation: 0.18236421
+
+Attribute Self Enclosing
+Mean: 0.01288475	Standard Deviation: 0.11281776
+
+Attribute Number of Self Intersections
+Mean: 0.16034359	Standard Deviation: 0.53400353
+
+Attribute Number of LL Intersections
+Mean: 0.08160344	Standard Deviation: 0.31520359
+
+Attribute Number of LX Intersections
+Mean: 0.11596278	Standard Deviation: 0.39807383
+
+Attribute Number of XL Intersections
+Mean: 0.1130995 	Standard Deviation: 0.38426266
+
+Attribute Number of XX Intersections
+Mean: 0.50322119	Standard Deviation: 1.00544203
+
+Attribute Part of a Closed Path
+Mean: 0.2154617 	Standard Deviation: 0.41128949
+
+Attribute End Point to Arc Length Ratio
+Mean: 0.61649192	Standard Deviation: 0.30216521
+
+Attribute Distance To Left or Right Edge
+Mean: 0.25190283	Standard Deviation: 0.40788532
+
+Attribute Distance To Top or Bottom Edge
+Mean: 0.49842704	Standard Deviation: 0.35849406
+
+Attribute Inside a Closed Path
+Mean: 0.15103794	Standard Deviation: 0.35821409
+
+Attribute Minimum Pen Speed
+Mean: 0.29745427	Standard Deviation: 0.48540144
+
+Attribute Difference Between Maximum and Minimum Pen Speed
+Mean: 1.44810272	Standard Deviation: 0.65338295
+
+Attribute Time to Draw Stroke
+Mean: 0.25606228	Standard Deviation: 0.17444356
+
+Attribute Time to Previous Stroke
+Mean: 1.04980959	Standard Deviation: 1.9090608 
+
+Attribute Time to Next Stroke
+Mean: 1.83219971	Standard Deviation: 4.44742937
+
+
+
+Class Wire: P(C) = 0.42111168
+
+Attribute Arc Length
+Mean: 1.46117316	Standard Deviation: 1.23105405
+
+Attribute Average Pen Speed
+Mean: 0.9668866 	Standard Deviation: 0.58648179
+
+Attribute Maximum Pen Speed
+Mean: 2.09958752	Standard Deviation: 1.11336337
+
+Attribute Sum of Thetas
+Mean: -0.11077657	Standard Deviation: 6.57775051
+
+Attribute Sum of Abs Value of Thetas
+Mean: 6.15778812	Standard Deviation: 7.98636379
+
+Attribute Sum of Squared Thetas
+Mean: 4.76955887	Standard Deviation: 8.19726261
+
+Attribute Sum of Sqrt of Thetas
+Mean: 12.59723597	Standard Deviation: 13.96308372
+
+Attribute Path Density
+Mean: 4.2458429 	Standard Deviation: 12.67809314
+
+Attribute Bounding Box Width
+Mean: 1.73148054	Standard Deviation: 1.69437421
+
+Attribute Bounding Box Height
+Mean: 1.16270725	Standard Deviation: 1.55325765
+
+Attribute Bounding Box Area
+Mean: 1.7825312 	Standard Deviation: 3.0752657 
+
+Attribute Self Enclosing
+Mean: 0.03609496	Standard Deviation: 0.18654904
+
+Attribute Number of Self Intersections
+Mean: 0.4561531 	Standard Deviation: 2.17292544
+
+Attribute Number of LL Intersections
+Mean: 0.25411822	Standard Deviation: 0.85945052
+
+Attribute Number of LX Intersections
+Mean: 0.75121124	Standard Deviation: 1.63759843
+
+Attribute Number of XL Intersections
+Mean: 0.49321705	Standard Deviation: 1.53733995
+
+Attribute Number of XX Intersections
+Mean: 1.15552326	Standard Deviation: 2.62493283
+
+Attribute Part of a Closed Path
+Mean: 0.04554264	Standard Deviation: 0.20851627
+
+Attribute End Point to Arc Length Ratio
+Mean: 0.82559953	Standard Deviation: 0.23973743
+
+Attribute Distance To Left or Right Edge
+Mean: 0.36973631	Standard Deviation: 0.28524491
+
+Attribute Distance To Top or Bottom Edge
+Mean: 0.50827044	Standard Deviation: 0.30075203
+
+Attribute Inside a Closed Path
+Mean: 0.00920543	Standard Deviation: 0.09551385
+
+Attribute Minimum Pen Speed
+Mean: 0.39086361	Standard Deviation: 0.63990683
+
+Attribute Difference Between Maximum and Minimum Pen Speed
+Mean: 2.01148578	Standard Deviation: 1.10083505
+
+Attribute Time to Draw Stroke
+Mean: 0.90086701	Standard Deviation: 0.80923296
+
+Attribute Time to Previous Stroke
+Mean: 3.05536192	Standard Deviation: 4.07193463
+
+Attribute Time to Next Stroke
+Mean: 2.94161022	Standard Deviation: 4.36481729
+
+
+
+Time taken to build model: 0.27 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        6081               62.051  %
+Incorrectly Classified Instances      3719               37.949  %
+Kappa statistic                          0.4256
+Mean absolute error                      0.253 
+Root mean squared error                  0.48  
+Relative absolute error                 62.0146 %
+Root relative squared error            106.2869 %
+Total Number of Instances             9800     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.652     0.283      0.641     0.652     0.647      0.787    Gate
+                 0.856     0.228      0.384     0.856     0.53       0.889    Label
+                 0.508     0.042      0.898     0.508     0.649      0.906    Wire
+Weighted Avg.    0.621     0.174      0.713     0.621     0.631      0.852
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 2790 1293  194 |    a = Gate
+  157 1196   44 |    b = Label
+ 1404  627 2095 |    c = Wire
+

@@ -1,0 +1,71 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     digital_circuits
+Instances:    9802
+Attributes:   28
+              Arc Length
+              Average Pen Speed
+              Maximum Pen Speed
+              Sum of Thetas
+              Sum of Abs Value of Thetas
+              Sum of Squared Thetas
+              Sum of Sqrt of Thetas
+              Path Density
+              Bounding Box Width
+              Bounding Box Height
+              Bounding Box Area
+              Self Enclosing
+              Number of Self Intersections
+              Number of LL Intersections
+              Number of LX Intersections
+              Number of XL Intersections
+              Number of XX Intersections
+              Part of a Closed Path
+              End Point to Arc Length Ratio
+              Distance To Left or Right Edge
+              Distance To Top or Bottom Edge
+              Inside a Closed Path
+              Minimum Pen Speed
+              Difference Between Maximum and Minimum Pen Speed
+              Time to Draw Stroke
+              Time to Previous Stroke
+              Time to Next Stroke
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        8759               89.3593 %
+Incorrectly Classified Instances      1043               10.6407 %
+Kappa statistic                          0.8263
+Mean absolute error                      0.0711
+Root mean squared error                  0.2663
+Relative absolute error                 17.4191 %
+Root relative squared error             58.962  %
+Total Number of Instances             9802     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.895     0.09       0.885     0.895     0.89       0.9      Gate
+                 0.863     0.026      0.847     0.863     0.855      0.921    Label
+                 0.903     0.057      0.92      0.903     0.911      0.921    Wire
+Weighted Avg.    0.894     0.067      0.894     0.894     0.894      0.912
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 3827  162  288 |    a = Gate
+  154 1205   38 |    b = Label
+  345   56 3727 |    c = Wire
+

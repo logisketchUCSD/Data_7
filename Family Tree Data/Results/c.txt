@@ -1,0 +1,11 @@
+Male	Gate	Gate
+Male	Wire	Wire
+Male	Gate	Gate
+Marriage	Wire	Wire
+Male	Gate	Gate
+Male	Gate	Gate
+Male	Gate	Gate
+ChildLink	Label	Label
+ChildLink	Label	Label
+ChildLink	Label	Label
+Female	Gate	Gate

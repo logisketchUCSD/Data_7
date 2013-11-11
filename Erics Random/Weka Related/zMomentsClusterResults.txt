@@ -1,0 +1,155 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.ClassificationViaRegression -W weka.classifiers.trees.M5P -- -M 4.0
+Relation:     zernikeFeatures-weka.filters.unsupervised.attribute.Remove-R2-6,8-12,14-22,24-27,29-34
+Instances:    77
+Attributes:   6
+              A20
+              A43
+              A64
+              A88
+              A99
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Classification via Regression
+
+Classifier for class with index 0:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+A20 <= 237.777 : 
+|   A20 <= 150.401 : LM1 (11/0%)
+|   A20 >  150.401 : LM2 (22/0%)
+A20 >  237.777 : LM3 (44/0%)
+
+LM num: 1
+class = 
+	0.0033 * A20 
+	- 0.1539
+
+LM num: 2
+class = 
+	0.0021 * A20 
+	+ 0.3822
+
+LM num: 3
+class = 
+	-0.0006 * A20 
+	+ 0.2232
+
+Number of Rules : 3
+
+Classifier for class with index 1:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+A88 <= 119.643 : LM1 (44/0%)
+A88 >  119.643 : LM2 (33/0%)
+
+LM num: 1
+class = 
+	0.0039 * A88 
+	- 0.319
+
+LM num: 2
+class = 
+	0.0048 * A88 
+	+ 0.2954
+
+Number of Rules : 2
+
+Classifier for class with index 2:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+A20 <= 270.723 : LM1 (38/0%)
+A20 >  270.723 : 
+|   A88 <= 121.066 : LM2 (11/0%)
+|   A88 >  121.066 : LM3 (28/0%)
+
+LM num: 1
+class = 
+	0.0014 * A20 
+	- 0.0032 * A88 
+	+ 0.0493
+
+LM num: 2
+class = 
+	0.0014 * A20 
+	- 0.013 * A88 
+	+ 1.7729
+
+LM num: 3
+class = 
+	0.0014 * A20 
+	- 0.0091 * A88 
+	+ 0.9064
+
+Number of Rules : 3
+
+Classifier for class with index 3:
+
+M5 pruned model tree:
+(using smoothed linear models)
+
+A20 <= 187.644 : 
+|   A20 <= 150.401 : LM1 (11/0%)
+|   A20 >  150.401 : LM2 (5/0%)
+A20 >  187.644 : LM3 (61/0%)
+
+LM num: 1
+class = 
+	-0.0057 * A20 
+	+ 1.4323
+
+LM num: 2
+class = 
+	-0.0068 * A20 
+	+ 1.4311
+
+LM num: 3
+class = 
+	-0.0007 * A20 
+	+ 0.1999
+
+Number of Rules : 3
+
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          76               98.7013 %
+Incorrectly Classified Instances         1                1.2987 %
+Kappa statistic                          0.9812
+Mean absolute error                      0.0828
+Root mean squared error                  0.1255
+Relative absolute error                 23.7324 %
+Root relative squared error             30.086  %
+Total Number of Instances               77     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0          1         1         1          1        AND/OR
+                 1         0.023      0.971     1         0.985      1        NAND/NOR/NOT
+                 0.909     0          1         0.909     0.952      1        XOR
+                 1         0          1         1         1          1        NOTBUBBLE
+Weighted Avg.    0.987     0.01       0.987     0.987     0.987      1    
+
+=== Confusion Matrix ===
+
+  a  b  c  d   <-- classified as
+ 22  0  0  0 |  a = AND/OR
+  0 33  0  0 |  b = NAND/NOR/NOT
+  0  1 10  0 |  c = XOR
+  0  0  0 11 |  d = NOTBUBBLE
+

@@ -1,0 +1,106 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.BayesNet -D -Q weka.classifiers.bayes.net.search.local.K2 -- -P 1 -S BAYES -E weka.classifiers.bayes.net.estimate.SimpleEstimator -- -A 0.5
+Relation:     digital_circuits
+Instances:    9802
+Attributes:   28
+              Arc Length
+              Average Pen Speed
+              Maximum Pen Speed
+              Sum of Thetas
+              Sum of Abs Value of Thetas
+              Sum of Squared Thetas
+              Sum of Sqrt of Thetas
+              Path Density
+              Bounding Box Width
+              Bounding Box Height
+              Bounding Box Area
+              Self Enclosing
+              Number of Self Intersections
+              Number of LL Intersections
+              Number of LX Intersections
+              Number of XL Intersections
+              Number of XX Intersections
+              Part of a Closed Path
+              End Point to Arc Length Ratio
+              Distance To Left or Right Edge
+              Distance To Top or Bottom Edge
+              Inside a Closed Path
+              Minimum Pen Speed
+              Difference Between Maximum and Minimum Pen Speed
+              Time to Draw Stroke
+              Time to Previous Stroke
+              Time to Next Stroke
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Bayes Network Classifier
+not using ADTree
+#attributes=28 #classindex=27
+Network structure (nodes followed by parents)
+Arc Length(10): class 
+Average Pen Speed(6): class 
+Maximum Pen Speed(5): class 
+Sum of Thetas(11): class 
+Sum of Abs Value of Thetas(6): class 
+Sum of Squared Thetas(6): class 
+Sum of Sqrt of Thetas(6): class 
+Path Density(11): class 
+Bounding Box Width(10): class 
+Bounding Box Height(11): class 
+Bounding Box Area(8): class 
+Self Enclosing(2): class 
+Number of Self Intersections(4): class 
+Number of LL Intersections(3): class 
+Number of LX Intersections(4): class 
+Number of XL Intersections(4): class 
+Number of XX Intersections(4): class 
+Part of a Closed Path(2): class 
+End Point to Arc Length Ratio(9): class 
+Distance To Left or Right Edge(12): class 
+Distance To Top or Bottom Edge(4): class 
+Inside a Closed Path(2): class 
+Minimum Pen Speed(7): class 
+Difference Between Maximum and Minimum Pen Speed(5): class 
+Time to Draw Stroke(9): class 
+Time to Previous Stroke(9): class 
+Time to Next Stroke(7): class 
+class(3): 
+LogScore Bayes: -331433.9571292738
+LogScore BDeu: -332791.36524250096
+LogScore MDL: -332715.3288965003
+LogScore ENTROPY: -330638.3116665443
+LogScore AIC: -331090.3116665443
+
+
+Time taken to build model: 0.8 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        8407               85.7682 %
+Incorrectly Classified Instances      1395               14.2318 %
+Kappa statistic                          0.7723
+Mean absolute error                      0.1076
+Root mean squared error                  0.2712
+Relative absolute error                 26.3752 %
+Root relative squared error             60.0422 %
+Total Number of Instances             9802     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.847     0.103      0.865     0.847     0.856      0.946    Gate
+                 0.889     0.072      0.672     0.889     0.765      0.972    Label
+                 0.858     0.039      0.942     0.858     0.898      0.975    Wire
+Weighted Avg.    0.858     0.071      0.869     0.858     0.861      0.962
+
+=== Confusion Matrix ===
+
+    a    b    c   <-- classified as
+ 3624  444  209 |    a = Gate
+  144 1242   11 |    b = Label
+  424  163 3541 |    c = Wire
+
